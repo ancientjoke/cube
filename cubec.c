@@ -367,14 +367,17 @@ void draw_axes(Screen* screen, Settings* settings, float angle_x, float angle_y,
 
 void print_help() {
     printf("\n=== ASCII Rotating Cube - Controls ===\n\n");
+    
     printf("Quality Controls:\n");
-    printf("  + / -     : Increase/decrease quality (detail level)\n");
+    printf("  + / -     : Increase/decrease quality\n");
     printf("  w / h     : Increase/decrease width\n");
     printf("  e / d     : Increase/decrease height\n");
+    
     printf("\nSpeed Controls:\n");
     printf("  SPACE     : Pause/resume rotation\n");
     printf("  < / >     : Decrease/increase rotation speed\n");
     printf("  , / .     : Fine speed adjustment\n");
+    
     printf("\nVisual Controls:\n");
     printf("  c         : Cycle through color modes\n");
     printf("  t         : Cycle through texture modes\n");
@@ -382,11 +385,14 @@ void print_help() {
     printf("  a         : Toggle axes display\n");
     printf("  s         : Increase scale\n");
     printf("  x         : Decrease scale\n");
+    
     printf("\nOther:\n");
     printf("  r         : Reset to defaults\n");
     printf("  i         : Show this help\n");
     printf("  q         : Quit\n");
+    
     printf("\nPress any key to continue...\n");
+    
     getchar();
 }
 
@@ -635,4 +641,5 @@ int main(int argc, char* argv[]) {
     return 0;
 
 }
+
 
